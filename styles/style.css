@@ -49,7 +49,7 @@ footer {
   gap: 0.875rem;
 }
 .testimonial__name {
-  font-weight: 600;
+  font-weight: 500;
 }
 .testimonial__status {
   opacity: 50%;
@@ -61,6 +61,34 @@ footer {
 .testimonial__content {
   display: grid;
   gap: 1.25rem;
+}
+.testimonial__summary {
+  font-size: 20px;
+  font-weight: 600;
+}
+.testimonial__quote {
+  opacity: 70%;
+}
+
+.testimonial:nth-child(1) {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial:nth-child(2) {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial:nth-child(3),
+.testimonial:nth-child(5) {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
+}
+
+.testimonial:nth-child(4) {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
 }
 
 .attribution {

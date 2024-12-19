@@ -68,7 +68,7 @@ footer {
     }
 
     &__name {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     &__status {
@@ -84,6 +84,41 @@ footer {
         display: grid;
         gap: 1.25rem;
     }
+
+    &__summary {
+        font-size: $large-font-size;
+        font-weight: 600;
+    }
+
+    &__quote {
+        opacity: 70%;
+    }
+}
+
+// Specific styles
+// Daniel Clifford
+.testimonial:nth-child(1) {
+    background-color: $moderate-violet;
+    color: $white;
+}
+
+// Jonathan Walters
+.testimonial:nth-child(2) {
+    background-color: $very-dark-grayish-blue;
+    color: $white;
+}
+
+// Jeanette Harmon and Kira Whittle
+.testimonial:nth-child(3),
+.testimonial:nth-child(5) {
+    background-color: $white;
+    color: $very-dark-blackish-blue;
+}
+
+// Patrick Abrams
+.testimonial:nth-child(4) {
+    background-color: $very-dark-blackish-blue;
+    color: $white;
 }
 
 .attribution {
