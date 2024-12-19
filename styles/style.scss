@@ -1,5 +1,93 @@
+$moderate-violet: hsl(263, 55%, 52%);
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+$font-family: "Barlow Semi Condensed", serif;
+
+$small-font-size: 12px;
+$regular-font-size: 13px;
+$large-font-size: 20px;
+
+// Base
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $light-grayish-blue;
+    padding-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-family;
+    font-size: $regular-font-size;
+}
+
+main,
+footer {
+    width: 20.5rem; //base width
+}
+
+main {
+    display: grid;
+    gap: 1.5rem;
+}
+
+section {
+    background-color: $moderate-violet; //delete later
+    padding: 1.875rem;
+}
+
+h1 {
+    font-size: $regular-font-size;
+}
+
+footer {
+    margin-top: 4.5rem;
+    padding: 1rem;
+}
+
+// Styles
+
+.testimonial {
+    border-radius: 7px;
+    display: grid;
+    gap: 1.25rem;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 0.875rem;
+    }
+
+    &__name {
+        font-weight: 600;
+    }
+
+    &__status {
+        opacity: 50%;
+    }
+
+    &__portrait {
+        width: 1.875rem;
+        border-radius: 50%;
+    }
+
+    &__content {
+        display: grid;
+        gap: 1.25rem;
+    }
+}
+
 .attribution {
-    font-size: 11px;
+    font-size: $small-font-size;
     text-align: center;
 }
 

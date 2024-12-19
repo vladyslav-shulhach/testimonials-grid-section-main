@@ -1,5 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", serif;
+  font-size: 13px;
+}
+
+main,
+footer {
+  width: 20.5rem;
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+}
+
+section {
+  background-color: hsl(263, 55%, 52%);
+  padding: 1.875rem;
+}
+
+h1 {
+  font-size: 13px;
+}
+
+footer {
+  margin-top: 4.5rem;
+  padding: 1rem;
+}
+
+.testimonial {
+  border-radius: 7px;
+  display: grid;
+  gap: 1.25rem;
+}
+.testimonial__header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+.testimonial__name {
+  font-weight: 600;
+}
+.testimonial__status {
+  opacity: 50%;
+}
+.testimonial__portrait {
+  width: 1.875rem;
+  border-radius: 50%;
+}
+.testimonial__content {
+  display: grid;
+  gap: 1.25rem;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 
