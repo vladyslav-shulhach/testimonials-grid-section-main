@@ -12,6 +12,8 @@ $small-font-size: 12px;
 $regular-font-size: 13px;
 $large-font-size: 20px;
 
+$light-violet: hsl(263, 74%, 70%);
+
 // Base
 
 * {
@@ -42,7 +44,8 @@ main {
 
 section {
     background-color: $moderate-violet; //delete later
-    padding: 1.875rem;
+    padding: 1.5rem 1.875rem 1.875rem 1.875rem;
+    position: relative; //ensures that quotemark is inside of the container
 }
 
 h1 {
@@ -57,26 +60,27 @@ footer {
 // Styles
 
 .testimonial {
-    border-radius: 7px;
+    border-radius: 8px;
     display: grid;
-    gap: 1.25rem;
+    gap: 1.35rem;
 
     &__header {
         display: flex;
         align-items: center;
-        gap: 0.875rem;
+        gap: 0.75rem;
     }
 
     &__name {
-        font-weight: 500;
+        font-weight: 400;
     }
 
     &__status {
+        font-size: $small-font-size;
         opacity: 50%;
     }
 
     &__portrait {
-        width: 1.875rem;
+        width: 1.9rem;
         border-radius: 50%;
     }
 
@@ -87,12 +91,14 @@ footer {
 
     &__summary {
         font-size: $large-font-size;
-        font-weight: 600;
-        line-height: 130%;
+        font-weight: 500;
+        line-height: 120%;
     }
 
     &__quote {
-        opacity: 70%;
+        opacity: 50%;
+        line-height: 130%;
+        padding-right: 1.4rem;
     }
 
     // Specific styles
@@ -100,9 +106,23 @@ footer {
     &:nth-child(1) {
         background-color: $moderate-violet;
         color: $white;
+        overflow: hidden;
 
         .testimonial__portrait {
-            border: 2px solid hsl(263, 67%, 64%);
+            border: 2px solid $light-violet;
+        }
+
+        .testimonial__summary {
+            z-index: 1; // takes over the quotemark background
+        }
+
+        .testimonial__quote-mark {
+            font-family: sans-serif;
+            font-size: 26.5rem;
+            color: $light-violet;
+            position: absolute;
+            top: -5rem;
+            right: 0;
         }
     }
 
