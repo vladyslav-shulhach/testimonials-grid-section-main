@@ -65,30 +65,38 @@ footer {
 .testimonial__summary {
   font-size: 20px;
   font-weight: 600;
+  line-height: 130%;
 }
 .testimonial__quote {
   opacity: 70%;
 }
-
 .testimonial:nth-child(1) {
   background-color: hsl(263, 55%, 52%);
   color: hsl(0, 0%, 100%);
 }
-
+.testimonial:nth-child(1) .testimonial__portrait {
+  border: 2px solid hsl(263, 67%, 64%);
+}
 .testimonial:nth-child(2) {
   background-color: hsl(217, 19%, 35%);
   color: hsl(0, 0%, 100%);
 }
-
-.testimonial:nth-child(3),
-.testimonial:nth-child(5) {
+.testimonial:nth-child(2) .testimonial__portrait {
+  border: 2px solid hsl(216, 21%, 56%);
+}
+.testimonial:nth-child(3), .testimonial:nth-child(5) {
   background-color: hsl(0, 0%, 100%);
   color: hsl(219, 29%, 14%);
 }
-
+.testimonial:nth-child(3) .testimonial__portrait, .testimonial:nth-child(5) .testimonial__portrait {
+  border: 2px solid hsl(0, 0%, 100%);
+}
 .testimonial:nth-child(4) {
   background-color: hsl(219, 29%, 14%);
   color: hsl(0, 0%, 100%);
+}
+.testimonial:nth-child(4) .testimonial__portrait {
+  border: 2px solid hsl(263, 55%, 52%);
 }
 
 .attribution {

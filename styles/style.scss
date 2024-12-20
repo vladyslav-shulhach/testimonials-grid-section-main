@@ -88,37 +88,54 @@ footer {
     &__summary {
         font-size: $large-font-size;
         font-weight: 600;
+        line-height: 130%;
     }
 
     &__quote {
         opacity: 70%;
     }
-}
 
-// Specific styles
-// Daniel Clifford
-.testimonial:nth-child(1) {
-    background-color: $moderate-violet;
-    color: $white;
-}
+    // Specific styles
+    // Daniel Clifford
+    &:nth-child(1) {
+        background-color: $moderate-violet;
+        color: $white;
 
-// Jonathan Walters
-.testimonial:nth-child(2) {
-    background-color: $very-dark-grayish-blue;
-    color: $white;
-}
+        .testimonial__portrait {
+            border: 2px solid hsl(263, 67%, 64%);
+        }
+    }
 
-// Jeanette Harmon and Kira Whittle
-.testimonial:nth-child(3),
-.testimonial:nth-child(5) {
-    background-color: $white;
-    color: $very-dark-blackish-blue;
-}
+    // Jonathan Walters
+    &:nth-child(2) {
+        background-color: $very-dark-grayish-blue;
+        color: $white;
 
-// Patrick Abrams
-.testimonial:nth-child(4) {
-    background-color: $very-dark-blackish-blue;
-    color: $white;
+        .testimonial__portrait {
+            border: 2px solid hsl(216, 21%, 56%);
+        }
+    }
+
+    // Jeanette Harmon and Kira Whittle
+    &:nth-child(3),
+    &:nth-child(5) {
+        background-color: $white;
+        color: $very-dark-blackish-blue;
+
+        .testimonial__portrait {
+            border: 2px solid $white;
+        }
+    }
+
+    // Patrick Abrams
+    &:nth-child(4) {
+        background-color: $very-dark-blackish-blue;
+        color: $white;
+
+        .testimonial__portrait {
+            border: 2px solid $moderate-violet;
+        }
+    }
 }
 
 .attribution {
