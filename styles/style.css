@@ -122,4 +122,60 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 6rem;
+  }
+  main {
+    display: grid;
+    width: 47rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "card-1 card-1" "card-2 card-3" "card-4 card-3" "card-4 card-5";
+  }
+  .testimonial:nth-child(1) {
+    grid-area: card-1;
+  }
+  .testimonial:nth-child(2) {
+    grid-area: card-2;
+  }
+  .testimonial:nth-child(4) {
+    grid-area: card-3;
+  }
+  .testimonial:nth-child(5) {
+    grid-area: card-4;
+  }
+  .testimonial:nth-child(3) {
+    grid-area: card-5;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    justify-content: center;
+    height: 100vh;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 17.75rem 17.75rem;
+    width: 69.25rem;
+    grid-template-areas: "card-1 card-1 card-2 card-3" "card-4 card-5 card-5 card-3";
+  }
+  .testimonial:nth-child(1) {
+    grid-area: card-1;
+  }
+  .testimonial:nth-child(2) {
+    grid-area: card-2;
+  }
+  .testimonial:nth-child(5) {
+    grid-area: card-3;
+  }
+  .testimonial:nth-child(3) {
+    grid-area: card-4;
+  }
+  .testimonial:nth-child(4) {
+    grid-area: card-5;
+  }
 }/*# sourceMappingURL=style.css.map */
