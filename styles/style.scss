@@ -46,6 +46,7 @@ section {
     background-color: $moderate-violet; //delete later
     padding: 1.5rem 1.875rem 1.875rem 1.875rem;
     position: relative; //ensures that quotemark is inside of the container
+    box-shadow: 32px 32px 64px -41px rgba(141, 155, 168, 0.589);
 }
 
 h1 {
@@ -93,10 +94,11 @@ footer {
         font-size: $large-font-size;
         font-weight: 500;
         line-height: 120%;
+        letter-spacing: 0.26px;
     }
 
     &__quote {
-        opacity: 50%;
+        opacity: 60%;
         line-height: 130%;
         padding-right: 1.4rem;
     }
@@ -223,7 +225,7 @@ footer {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 17.75rem 17.75rem;
+        grid-template-rows: 17.4rem 17.4rem;
         width: 69.25rem;
         grid-template-areas:
             "card-1 card-1 card-2 card-3"
@@ -233,6 +235,10 @@ footer {
     // Daniel Clifford
     .testimonial:nth-child(1) {
         grid-area: card-1;
+
+        .testimonial__quote-mark {
+            right: 5rem;
+        }
     }
 
     // Jonathan Walters
